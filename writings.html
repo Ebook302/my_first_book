@@ -1,64 +1,63 @@
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>'הספר שלי 'טיפות של מחשבה</title>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      font-family: 'Varela Round', sans-serif;
+      background-color: #fdfaf5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>סיפור חיים</title>
-    <style>
-        body {
-            font-family: "Noto Sans Hebrew", sans-serif;
-            background-color: #fdfaf5;
-            color: #333;
-            margin: 2rem auto;
-            max-width: 800px;
-            line-height: 1.8;
-            padding: 1rem;
-        }
-        h1, h2 {
-            color: #6b4c3b;
-        }
-        nav {
-            background: #f3ede6;
-            padding: 1rem;
-            margin-bottom: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-        }
-        nav a {
-            margin-left: 1rem;
-            text-decoration: none;
-            color: #5a3d2b;
-            font-weight: bold;
-        }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const scrollPos = localStorage.getItem("scrollPos");
-            if (scrollPos) {
-                window.scrollTo(0, parseInt(scrollPos));
-            }
-        });
+    header {
+      background-color: #3f51b5;
+      background-color: #a89f91;
+      color: white;
+      padding: 20px;
+      padding: 25px 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-        window.addEventListener("beforeunload", function () {
-            localStorage.setItem("scrollPos", window.scrollY);
-        });
-    </script>
+    h1 {
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .iframe-container {
+      padding: 20px;
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 90%;
+      height: 800px;
+      border: none;
+      max-width: 1000px;
+      margin-top: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>סיפור חיים</h1>
-    <nav>
-        <a href="#part1">פרק 1</a>
-        <a href="#part2">פרק 2</a>
-        <a href="#part3">פרק 3</a>
-    </nav>
 
-    <h2 id="part1">פרק 1: התחלה</h2>
-    <p>כאן יופיע הטקסט של הפרק הראשון. זהו טקסט לדוגמה...</p>
-
-    <h2 id="part2">פרק 2: האתגר</h2>
-    <p>כאן יופיע הטקסט של הפרק השני. זהו טקסט לדוגמה...</p>
-
-    <h2 id="part3">פרק 3: הניצחון</h2>
-    <p>כאן יופיע הטקסט של הפרק השלישי. זהו טקסט לדוגמה...</p>
-</body>
-</html>
+  <header>
